@@ -1,0 +1,18 @@
+<html>
+
+  <head>
+    <title> Formulario </title>
+  </head>
+
+  <body>
+    <form method="POST" action="update">
+      Id <input type="text" name="txtId" value="{{ res[0][0] }}" readonly></br>
+      Apellido <input type="text" name="txtApellido" value="{{ res[0][1] }}"></br>
+      Nombre <input type="text" name="txtNombre" value="{{ res[0][2] }}"></br>
+      Ciudad <input type="text" name="txtCiudad" value="{{ res[0][3] }}"></br>  
+      Correo <input type="text" name="txtCorreo" value="{{ res[0][4] }}"></br>
+      <input type="submit" value="Ingresar">
+    </form>
+  </body>
+
+</html>

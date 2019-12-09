@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <table border="1">
+      <tr bgcolor="pink">
+        <td> Index </td>
+        <td> Apellido  </td>
+        <td> Nombre </td>
+        <td> Ciudad </td>
+        <td> Correo </td>
+        <td> Editar </td>
+        <td> Borrar </td>        
+      </tr>
+
+      {% for row in list %}
+      <tr>
+        <td> {{ row[0] }} </td>
+        <td> {{ row[1] }} </td>
+        <td> {{ row[2] }} </td>
+        <td> {{ row[3] }} </td>
+        <td> {{ row[4] }} </td>
+        <!-- <td> <a href=form2?id={{ row[0] }}> Editar </a> </td>
+        <td> <a href=editar_form.html?id={{ row[0] }}> Borrar </a> </td> -->
+        <td> <a href=form2/{{ row[0] }}> Editar </a> </td>
+        <td> <a href=delete/{{ row[0] }}> Borrar </a> </td>
+      </tr>
+      {% endfor %}      
+    </table>
+    <a href='formulario'> Ir a formulario </a>
+
+  </body>
+</html>
